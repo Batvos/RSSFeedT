@@ -1,0 +1,22 @@
+PODS:
+  - Typhoon (3.4.7):
+    - Typhoon/no-arc (= 3.4.7)
+  - Typhoon/no-arc (3.4.7)
+  - ViperMcFlurry (1.2.0):
+    - ViperMcFlurry/Core (= 1.2.0)
+    - ViperMcFlurry/IntermoduleDataTransfer (= 1.2.0)
+  - ViperMcFlurry/Core (1.2.0)
+  - ViperMcFlurry/IntermoduleDataTransfer (1.2.0):
+    - ViperMcFlurry/Core
+
+DEPENDENCIES:
+  - Typhoon (~> 3.4)
+  - ViperMcFlurry
+
+SPEC CHECKSUMS:
+  Typhoon: 0953addabd5a10a930973fcc131c03badc88c4ba
+  ViperMcFlurry: dc0aed190c3485fc6c95a50375d2e9812c9adb7e
+
+PODFILE CHECKSUM: b3dd8baba64bfcc6fe361e2cae7dbe19cb042a5f
+
+COCOAPODS: 1.0.0
