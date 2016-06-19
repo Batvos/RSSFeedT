@@ -39,7 +39,7 @@
 
 - (void)tearDown {
     self.interactor = nil;
-
+    self.feedService = nil;
     self.mockOutput = nil;
 
     [super tearDown];

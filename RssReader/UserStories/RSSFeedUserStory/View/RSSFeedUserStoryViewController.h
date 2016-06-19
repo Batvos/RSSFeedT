@@ -10,10 +10,13 @@
 
 #import "RSSFeedUserStoryViewInput.h"
 
+@class RSSFeedTableViewManger;
+
 @protocol RSSFeedUserStoryViewOutput;
 
 @interface RSSFeedUserStoryViewController : UITableViewController <RSSFeedUserStoryViewInput>
 
 @property (nonatomic, strong) id<RSSFeedUserStoryViewOutput> output;
+@property (nonatomic, strong) RSSFeedTableViewManger<UITableViewDataSource, UITableViewDelegate> *delegateAndSource;
 
 @end

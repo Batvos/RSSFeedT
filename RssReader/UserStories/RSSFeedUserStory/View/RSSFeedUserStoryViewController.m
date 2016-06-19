@@ -7,8 +7,12 @@
 //
 
 #import "RSSFeedUserStoryViewController.h"
-
+#import "RSSFeedTableViewManger.h"
 #import "RSSFeedUserStoryViewOutput.h"
+
+@interface RSSFeedUserStoryViewController () <RSSFeedTableViewMangerOutput>
+
+@end
 
 @implementation RSSFeedUserStoryViewController
 
@@ -24,10 +28,24 @@
 
 - (void)setupInitialState:(NSArray *)rssNewsList {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+    [self updateNewsFeed:rssNewsList];
+    
+    self.tableView.dataSource = self.delegateAndSource;
+    self.tableView.delegate = self.delegateAndSource;
 }
 
 - (void)updateNewsFeed:(NSArray *)newsList {
-    
+    [self.delegateAndSource updateTableViewWithNewsList:newsList];
+}
+
+#pragma mark - RSSFeedTableViewMangerOutput methods
+
+- (void)didUpdateTableView {
+    [self.tableView reloadData];
+}
+
+- (void)didTapCellWithNews:(RSSNewsEntity *)news {
+    [self.output didTriggerTapCellWithNews:news];
 }
 
 @end

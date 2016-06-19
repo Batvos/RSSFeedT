@@ -12,6 +12,7 @@
 #import "RSSFeedUserStoryInteractor.h"
 #import "RSSFeedUserStoryPresenter.h"
 #import "RSSFeedUserStoryRouter.h"
+#import "RSSFeedTableViewManger.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -24,6 +25,8 @@
                                                     with:[self presenterRSSFeedUserStoryModule]];
                               [definition injectProperty:@selector(moduleInput)
                                                     with:[self presenterRSSFeedUserStoryModule]];
+                              [definition injectProperty:@selector(delegateAndSource)
+                                                    with:[self tableViewMangerRSSFeedUserStroryModule]];
                           }];
 }
 
@@ -53,6 +56,10 @@
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewRSSFeedUserStoryModule]];
                           }];
+}
+
+- (RSSFeedTableViewManger *)tableViewMangerRSSFeedUserStroryModule {
+    return [TyphoonDefinition withClass:[RSSFeedTableViewManger class]];
 }
 
 @end

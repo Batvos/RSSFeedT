@@ -34,4 +34,8 @@
     [self.view updateNewsFeed:newsList];
 }
 
+- (void)didTriggerTapCellWithNews:(RSSNewsEntity *)news {
+    
+}
+
 @end
