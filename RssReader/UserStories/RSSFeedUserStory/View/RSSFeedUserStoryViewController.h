@@ -12,7 +12,7 @@
 
 @protocol RSSFeedUserStoryViewOutput;
 
-@interface RSSFeedUserStoryViewController : UIViewController <RSSFeedUserStoryViewInput>
+@interface RSSFeedUserStoryViewController : UITableViewController <RSSFeedUserStoryViewInput>
 
 @property (nonatomic, strong) id<RSSFeedUserStoryViewOutput> output;
 

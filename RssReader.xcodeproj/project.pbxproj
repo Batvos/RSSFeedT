@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		03554C271D15E4F00031AC39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 03554C261D15E4F00031AC39 /* main.m */; };
 		03554C2A1D15E4F00031AC39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03554C291D15E4F00031AC39 /* AppDelegate.m */; };
-		03554C301D15E4F00031AC39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03554C2E1D15E4F00031AC39 /* Main.storyboard */; };
 		03554C321D15E4F00031AC39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03554C311D15E4F00031AC39 /* Assets.xcassets */; };
 		03554C351D15E4F00031AC39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03554C331D15E4F00031AC39 /* LaunchScreen.storyboard */; };
 		03554C401D15E4F00031AC39 /* RssReaderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 03554C3F1D15E4F00031AC39 /* RssReaderTests.m */; };
+		03554C4B1D16199F0031AC39 /* RSSFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03554C4A1D16199F0031AC39 /* RSSFeed.storyboard */; };
+		03554C4D1D161B7E0031AC39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03554C4C1D161B7E0031AC39 /* Main.storyboard */; };
+		03554C571D16E49B0031AC39 /* RSSNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 03554C561D16E49B0031AC39 /* RSSNewsEntity.m */; };
 		30809571E022645A9AF13054 /* RSSFeedUserStoryAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C45913D379F089B9F3CA1CD3 /* RSSFeedUserStoryAssembly.m */; };
 		3283B0ECBFA31CC1208A2920 /* RSSFeedUserStoryViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 30A7E1513A195B97233855F9 /* RSSFeedUserStoryViewControllerTests.m */; };
 		3A74D3F54F61DD5E497098AE /* RSSFeedUserStoryPresenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CCC8F80DAA9CEC99D3CBD7A /* RSSFeedUserStoryPresenterTests.m */; };
@@ -42,13 +44,17 @@
 		03554C261D15E4F00031AC39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		03554C281D15E4F00031AC39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		03554C291D15E4F00031AC39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		03554C2F1D15E4F00031AC39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03554C311D15E4F00031AC39 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		03554C341D15E4F00031AC39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		03554C361D15E4F00031AC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		03554C3B1D15E4F00031AC39 /* RssReaderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RssReaderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		03554C3F1D15E4F00031AC39 /* RssReaderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RssReaderTests.m; sourceTree = "<group>"; };
 		03554C411D15E4F00031AC39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03554C4A1D16199F0031AC39 /* RSSFeed.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = RSSFeed.storyboard; sourceTree = "<group>"; };
+		03554C4C1D161B7E0031AC39 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		03554C531D16DD010031AC39 /* RSSFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedService.h; sourceTree = "<group>"; };
+		03554C551D16E49B0031AC39 /* RSSNewsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSNewsEntity.h; sourceTree = "<group>"; };
+		03554C561D16E49B0031AC39 /* RSSNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSNewsEntity.m; sourceTree = "<group>"; };
 		059DDB635855C4274FC6B75B /* libPods-RssReader.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RssReader.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		199C69465CC1F31D1990C02D /* RSSFeedUserStoryInteractorTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RSSFeedUserStoryInteractorTests.m; sourceTree = "<group>"; };
 		2211AEA8ADC946015ABE9E23 /* RSSFeedUserStoryViewInput.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RSSFeedUserStoryViewInput.h; sourceTree = "<group>"; };
@@ -123,10 +129,12 @@
 			isa = PBXGroup;
 			children = (
 				32C46014DA987386EE3A2617 /* UserStories */,
+				03554C521D16CA280031AC39 /* BusinessLogic */,
+				03554C541D16E33B0031AC39 /* ModelEntities */,
 				03554C281D15E4F00031AC39 /* AppDelegate.h */,
 				03554C291D15E4F00031AC39 /* AppDelegate.m */,
-				03554C2E1D15E4F00031AC39 /* Main.storyboard */,
 				03554C311D15E4F00031AC39 /* Assets.xcassets */,
+				03554C4C1D161B7E0031AC39 /* Main.storyboard */,
 				03554C331D15E4F00031AC39 /* LaunchScreen.storyboard */,
 				03554C361D15E4F00031AC39 /* Info.plist */,
 				03554C251D15E4F00031AC39 /* Supporting Files */,
@@ -150,6 +158,23 @@
 				828396EBEE4BE476CE87E519 /* RSSFeedUserStory */,
 			);
 			path = RssReaderTests;
+			sourceTree = "<group>";
+		};
+		03554C521D16CA280031AC39 /* BusinessLogic */ = {
+			isa = PBXGroup;
+			children = (
+				03554C531D16DD010031AC39 /* RSSFeedService.h */,
+			);
+			path = BusinessLogic;
+			sourceTree = "<group>";
+		};
+		03554C541D16E33B0031AC39 /* ModelEntities */ = {
+			isa = PBXGroup;
+			children = (
+				03554C551D16E49B0031AC39 /* RSSNewsEntity.h */,
+				03554C561D16E49B0031AC39 /* RSSNewsEntity.m */,
+			);
+			path = ModelEntities;
 			sourceTree = "<group>";
 		};
 		03D616FC279216B56F5BCBC2 /* Presenter */ = {
@@ -178,6 +203,7 @@
 				03D616FC279216B56F5BCBC2 /* Presenter */,
 				C091B2F13F662396947443E4 /* Interactor */,
 				C275B118BA7F88E98755DA45 /* Router */,
+				03554C4A1D16199F0031AC39 /* RSSFeed.storyboard */,
 			);
 			path = RSSFeedUserStory;
 			sourceTree = "<group>";
@@ -383,8 +409,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				03554C351D15E4F00031AC39 /* LaunchScreen.storyboard in Resources */,
+				03554C4B1D16199F0031AC39 /* RSSFeed.storyboard in Resources */,
 				03554C321D15E4F00031AC39 /* Assets.xcassets in Resources */,
-				03554C301D15E4F00031AC39 /* Main.storyboard in Resources */,
+				03554C4D1D161B7E0031AC39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,6 +526,7 @@
 				03554C271D15E4F00031AC39 /* main.m in Sources */,
 				30809571E022645A9AF13054 /* RSSFeedUserStoryAssembly.m in Sources */,
 				655D9AD832218FA1FC6FCA8A /* RSSFeedUserStoryViewController.m in Sources */,
+				03554C571D16E49B0031AC39 /* RSSNewsEntity.m in Sources */,
 				50AFCEFEF4CC7E1386F33A5A /* RSSFeedUserStoryPresenter.m in Sources */,
 				BB0A1BF5837A8E576A9FA392 /* RSSFeedUserStoryInteractor.m in Sources */,
 				45ABFE2D7E482CD1B3CD6D6E /* RSSFeedUserStoryRouter.m in Sources */,
@@ -529,14 +557,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		03554C2E1D15E4F00031AC39 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				03554C2F1D15E4F00031AC39 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		03554C331D15E4F00031AC39 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -636,6 +656,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9991FDB68A24B45134A7A5B4 /* Pods-RssReader.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RssReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -648,6 +669,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8C5FBFB6481D9BF2F0DCB395 /* Pods-RssReader.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RssReader/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

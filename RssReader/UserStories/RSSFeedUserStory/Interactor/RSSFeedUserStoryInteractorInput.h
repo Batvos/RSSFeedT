@@ -10,4 +10,15 @@
 
 @protocol RSSFeedUserStoryInteractorInput <NSObject>
 
+/**
+ * Method to obtain RSS feed.
+ * @return Array of RSSNewsEntity objects.
+ */
+- (NSArray *)obtainRSSFeed;
+
+/**
+ * Method to update RSS feed. 
+ */
+- (void)updateRSSFeed;
+
 @end

@@ -45,4 +45,12 @@
 
 #pragma mark - Тестирование методов RSSFeedUserStoryInteractorInput
 
+- (void)testSuccessObtainRSSFeed {
+    // given
+    
+    // when
+    
+    // then
+}
+
 @end

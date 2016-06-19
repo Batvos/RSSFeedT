@@ -1,4 +1,5 @@
 PODS:
+  - OCMock (3.3)
   - Typhoon (3.4.7):
     - Typhoon/no-arc (= 3.4.7)
   - Typhoon/no-arc (3.4.7)
@@ -10,13 +11,15 @@ PODS:
     - ViperMcFlurry/Core
 
 DEPENDENCIES:
+  - OCMock (~> 3.3)
   - Typhoon (~> 3.4)
   - ViperMcFlurry
 
 SPEC CHECKSUMS:
+  OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
   Typhoon: 0953addabd5a10a930973fcc131c03badc88c4ba
   ViperMcFlurry: dc0aed190c3485fc6c95a50375d2e9812c9adb7e
 
-PODFILE CHECKSUM: b3dd8baba64bfcc6fe361e2cae7dbe19cb042a5f
+PODFILE CHECKSUM: 999fcb805c486eed491b654b01238e8769500fe8
 
 COCOAPODS: 1.0.0

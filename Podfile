@@ -14,6 +14,7 @@ target 'RssReader' do
   target 'RssReaderTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'OCMock', '~> 3.3'
   end
 
 end
