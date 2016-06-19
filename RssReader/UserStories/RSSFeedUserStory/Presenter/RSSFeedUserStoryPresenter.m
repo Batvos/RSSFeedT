@@ -23,9 +23,15 @@
 #pragma mark - Методы RSSFeedUserStoryViewOutput
 
 - (void)didTriggerViewReadyEvent {
-	[self.view setupInitialState];
+    NSArray *rssNewsList = [self.interactor obtainRSSFeed];
+    [self.interactor updateRSSFeed];
+    [self.view setupInitialState:rssNewsList];
 }
 
 #pragma mark - Методы RSSFeedUserStoryInteractorOutput
+
+- (void)didUpdateRSSFeed:(NSArray *)newsList {
+    [self.view updateNewsFeed:newsList];
+}
 
 @end

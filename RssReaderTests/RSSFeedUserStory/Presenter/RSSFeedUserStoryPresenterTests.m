@@ -60,14 +60,26 @@
 - (void)testThatPresenterHandlesViewReadyEvent {
     // given
 
-
     // when
     [self.presenter didTriggerViewReadyEvent];
 
     // then
-    OCMVerify([self.mockView setupInitialState]);
+    OCMVerify([self.mockView setupInitialState:OCMOCK_ANY]);
+    OCMVerify([self.mockInteractor obtainRSSFeed]);
+    OCMVerify([self.mockInteractor updateRSSFeed]);
 }
 
 #pragma mark - Тестирование методов RSSFeedUserStoryInteractorOutput
+
+- (void)testSuccessDidUpdateRSSFeed {
+    // given
+    NSArray *newsList = @[];
+    
+    // when
+    [self.presenter didUpdateRSSFeed:newsList];
+    
+    // then
+    OCMVerify([self.mockView updateNewsFeed:newsList]);
+}
 
 @end

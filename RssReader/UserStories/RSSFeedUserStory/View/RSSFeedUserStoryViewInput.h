@@ -14,7 +14,14 @@
  @author batvos
 
  Метод настраивает начальный стейт view
+ @param Array of RSSNewsEntity.
  */
-- (void)setupInitialState;
+- (void)setupInitialState:(NSArray *)rssFeedNews;
+
+/**
+ * Method update news feed.
+ * @param newsList Array of RSSNewsEntity.
+ */
+- (void)updateNewsFeed:(NSArray *)newsList;
 
 @end

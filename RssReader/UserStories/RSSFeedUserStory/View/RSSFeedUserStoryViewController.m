@@ -22,8 +22,12 @@
 
 #pragma mark - Методы RSSFeedUserStoryViewInput
 
-- (void)setupInitialState {
+- (void)setupInitialState:(NSArray *)rssNewsList {
 	// В этом методе происходит настройка параметров view, зависящих от ее жизненого цикла (создание элементов, анимации и пр.)
+}
+
+- (void)updateNewsFeed:(NSArray *)newsList {
+    
 }
 
 @end
