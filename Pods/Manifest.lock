@@ -1,5 +1,6 @@
 PODS:
   - OCMock (3.3)
+  - RamblerTyphoonUtils/AssemblyTesting (1.3.1)
   - Typhoon (3.4.7):
     - Typhoon/no-arc (= 3.4.7)
   - Typhoon/no-arc (3.4.7)
@@ -12,14 +13,16 @@ PODS:
 
 DEPENDENCIES:
   - OCMock (~> 3.3)
+  - RamblerTyphoonUtils/AssemblyTesting
   - Typhoon (~> 3.4)
   - ViperMcFlurry
 
 SPEC CHECKSUMS:
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
+  RamblerTyphoonUtils: 7c4c7a7e6fa569a38512a687f676a834de2bd311
   Typhoon: 0953addabd5a10a930973fcc131c03badc88c4ba
   ViperMcFlurry: dc0aed190c3485fc6c95a50375d2e9812c9adb7e
 
-PODFILE CHECKSUM: 999fcb805c486eed491b654b01238e8769500fe8
+PODFILE CHECKSUM: cb245b9f492647ee7c566a975b119b7a6c6587df
 
 COCOAPODS: 1.0.0

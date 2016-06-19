@@ -15,6 +15,7 @@ target 'RssReader' do
     inherit! :search_paths
     # Pods for testing
     pod 'OCMock', '~> 3.3'
+    pod "RamblerTyphoonUtils/AssemblyTesting"
   end
 
 end

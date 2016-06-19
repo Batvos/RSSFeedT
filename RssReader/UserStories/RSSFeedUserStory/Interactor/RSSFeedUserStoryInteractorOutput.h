@@ -10,4 +10,6 @@
 
 @protocol RSSFeedUserStoryInteractorOutput <NSObject>
 
+- (void)didUpdateRSSFeed:(NSArray *)newsList;
+
 @end
