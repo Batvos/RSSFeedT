@@ -1,6 +1,9 @@
 PODS:
   - OCMock (3.3)
   - RamblerTyphoonUtils/AssemblyTesting (1.3.1)
+  - SDWebImage (3.8.1):
+    - SDWebImage/Core (= 3.8.1)
+  - SDWebImage/Core (3.8.1)
   - Typhoon (3.4.7):
     - Typhoon/no-arc (= 3.4.7)
   - Typhoon/no-arc (3.4.7)
@@ -14,15 +17,17 @@ PODS:
 DEPENDENCIES:
   - OCMock (~> 3.3)
   - RamblerTyphoonUtils/AssemblyTesting
+  - SDWebImage (~> 3.8)
   - Typhoon (~> 3.4)
   - ViperMcFlurry
 
 SPEC CHECKSUMS:
   OCMock: d68685bde31f69cb61d518dcb39269080c78b5ed
   RamblerTyphoonUtils: 7c4c7a7e6fa569a38512a687f676a834de2bd311
+  SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
   Typhoon: 0953addabd5a10a930973fcc131c03badc88c4ba
   ViperMcFlurry: dc0aed190c3485fc6c95a50375d2e9812c9adb7e
 
-PODFILE CHECKSUM: cb245b9f492647ee7c566a975b119b7a6c6587df
+PODFILE CHECKSUM: 4f775113f3d07aecfaf9c59d5b3c9d16d5277677
 
 COCOAPODS: 1.0.0

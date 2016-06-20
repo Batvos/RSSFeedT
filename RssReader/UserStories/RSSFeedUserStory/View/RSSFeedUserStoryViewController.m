@@ -21,6 +21,9 @@
 - (void)viewDidLoad {
 	[super viewDidLoad];
 
+    self.tableView.rowHeight = UITableViewAutomaticDimension;
+    self.tableView.estimatedRowHeight = 64;
+    
 	[self.output didTriggerViewReadyEvent];
 }
 
@@ -32,6 +35,7 @@
     
     self.tableView.dataSource = self.delegateAndSource;
     self.tableView.delegate = self.delegateAndSource;
+    self.delegateAndSource.delegate = self;
 }
 
 - (void)updateNewsFeed:(NSArray *)newsList {

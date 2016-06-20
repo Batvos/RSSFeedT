@@ -14,5 +14,6 @@
 @property (nonatomic, copy) NSString *shortDescription;
 @property (nonatomic, copy) NSString *newsSource;
 @property (nonatomic, copy) NSURL *imageURL;
+@property (nonatomic, strong) NSDate *date;
 
 @end

@@ -10,6 +10,7 @@ target 'RssReader' do
   # Pods for RssReader
   pod 'Typhoon', '~> 3.4'
   pod "ViperMcFlurry"
+  pod 'SDWebImage', '~> 3.8'
   
   target 'RssReaderTests' do
     inherit! :search_paths

@@ -3,40 +3,56 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Feed User Story View Controller-->
         <scene sceneID="XjQ-g6-m1q">
             <objects>
                 <tableViewController storyboardIdentifier="RSSFeedUserStoryViewController" id="PrQ-hE-6w6" customClass="RSSFeedUserStoryViewController" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="31g-7w-Sek">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="64" sectionHeaderHeight="28" sectionFooterHeight="28" id="31g-7w-Sek">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="laq-AL-0IQ" customClass="RSSFeedTableViewCell">
-                                <rect key="frame" x="0.0" y="28" width="600" height="60"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="64" id="laq-AL-0IQ" customClass="RSSFeedTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="600" height="64"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="laq-AL-0IQ" id="Vod-Dk-aju">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="59.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="63.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZTI-M7-l8x">
-                                            <rect key="frame" x="8" y="0.0" width="58" height="58"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lenta" translatesAutoresizingMaskIntoConstraints="NO" id="ZTI-M7-l8x">
+                                            <rect key="frame" x="0.0" y="0.0" width="62" height="63"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="63" id="2mp-ZQ-Ac2"/>
+                                                <constraint firstAttribute="width" constant="62" id="P7T-aV-U5i"/>
+                                            </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-mn-tKO">
-                                            <rect key="frame" x="74" y="8" width="518" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Title" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pEC-mn-tKO">
+                                            <rect key="frame" x="64" y="0.0" width="518" height="47"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="news source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clE-Aa-IE9">
-                                            <rect key="frame" x="74" y="38" width="518" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" horizontalCompressionResistancePriority="751" text="news source" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="clE-Aa-IE9">
+                                            <rect key="frame" x="64" y="47" width="518" height="14.5"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="pEC-mn-tKO" secondAttribute="trailing" constant="10" id="4T7-Fz-PUg"/>
+                                        <constraint firstItem="ZTI-M7-l8x" firstAttribute="centerY" secondItem="Vod-Dk-aju" secondAttribute="centerY" id="BV6-ai-cfT"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="clE-Aa-IE9" secondAttribute="trailing" constant="10" id="ByG-na-vmh"/>
+                                        <constraint firstItem="clE-Aa-IE9" firstAttribute="leading" secondItem="pEC-mn-tKO" secondAttribute="leading" id="M6I-E6-0F4"/>
+                                        <constraint firstAttribute="leading" secondItem="ZTI-M7-l8x" secondAttribute="leading" id="aeT-Qd-9a5"/>
+                                        <constraint firstItem="pEC-mn-tKO" firstAttribute="leading" secondItem="ZTI-M7-l8x" secondAttribute="trailing" constant="2" id="jbw-Rd-X0k"/>
+                                        <constraint firstAttribute="top" secondItem="pEC-mn-tKO" secondAttribute="top" id="khp-O6-9rI"/>
+                                        <constraint firstItem="clE-Aa-IE9" firstAttribute="top" secondItem="pEC-mn-tKO" secondAttribute="bottom" id="qQw-ja-ZBC"/>
+                                        <constraint firstAttribute="bottom" secondItem="clE-Aa-IE9" secondAttribute="bottom" constant="2" id="rLk-7d-mBs"/>
+                                    </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="myImageView" destination="ZTI-M7-l8x" id="37g-LI-03T"/>
@@ -52,4 +68,7 @@
             <point key="canvasLocation" x="472" y="360"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="lenta" width="80" height="80"/>
+    </resources>
 </document>

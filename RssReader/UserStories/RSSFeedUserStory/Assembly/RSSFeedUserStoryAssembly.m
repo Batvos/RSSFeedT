@@ -13,6 +13,8 @@
 #import "RSSFeedUserStoryPresenter.h"
 #import "RSSFeedUserStoryRouter.h"
 #import "RSSFeedTableViewManger.h"
+#import "RSSFeedService.h"
+#import "RSSFeedServiceImpl.h"
 
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
@@ -35,7 +37,13 @@
                           configuration:^(TyphoonDefinition *definition) {
                               [definition injectProperty:@selector(output)
                                                     with:[self presenterRSSFeedUserStoryModule]];
+                              [definition injectProperty:@selector(rssFeddService)
+                                                    with:[self rssFeedService]];
                           }];
+}
+
+- (id <RSSFeedService>)rssFeedService {
+    return [TyphoonDefinition withClass:[RSSFeedServiceImpl class]];
 }
 
 - (RSSFeedUserStoryPresenter *)presenterRSSFeedUserStoryModule {

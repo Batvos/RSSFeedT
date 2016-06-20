@@ -17,6 +17,10 @@
 		03554C571D16E49B0031AC39 /* RSSNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 03554C561D16E49B0031AC39 /* RSSNewsEntity.m */; };
 		036F7AB51D17594B005F5BE4 /* RSSFeedTableViewMangerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AB41D17594B005F5BE4 /* RSSFeedTableViewMangerTest.m */; };
 		036F7AB81D1787A3005F5BE4 /* RSSFeedServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AB71D1787A3005F5BE4 /* RSSFeedServiceImpl.m */; };
+		036F7ABD1D17DB29005F5BE4 /* CommonNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7ABC1D17DB29005F5BE4 /* CommonNetworkClient.m */; };
+		036F7AC11D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AC01D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.m */; };
+		036F7AC41D17E78E005F5BE4 /* CommonNetworkClientTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AC31D17E78E005F5BE4 /* CommonNetworkClientTest.m */; };
+		036F7AC71D17E857005F5BE4 /* NetworkConstantsAndURLs.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AC61D17E857005F5BE4 /* NetworkConstantsAndURLs.m */; };
 		03B6AEB81D173815001AE9DE /* RSSFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B6AEB71D173815001AE9DE /* RSSFeedTableViewCell.m */; };
 		03B6AEBB1D173885001AE9DE /* RSSFeedTableViewManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B6AEBA1D173885001AE9DE /* RSSFeedTableViewManger.m */; };
 		30809571E022645A9AF13054 /* RSSFeedUserStoryAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = C45913D379F089B9F3CA1CD3 /* RSSFeedUserStoryAssembly.m */; };
@@ -62,6 +66,15 @@
 		036F7AB41D17594B005F5BE4 /* RSSFeedTableViewMangerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedTableViewMangerTest.m; sourceTree = "<group>"; };
 		036F7AB61D1787A3005F5BE4 /* RSSFeedServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedServiceImpl.h; sourceTree = "<group>"; };
 		036F7AB71D1787A3005F5BE4 /* RSSFeedServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedServiceImpl.m; sourceTree = "<group>"; };
+		036F7ABA1D17DB09005F5BE4 /* NetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkClient.h; sourceTree = "<group>"; };
+		036F7ABB1D17DB29005F5BE4 /* CommonNetworkClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonNetworkClient.h; sourceTree = "<group>"; };
+		036F7ABC1D17DB29005F5BE4 /* CommonNetworkClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonNetworkClient.m; sourceTree = "<group>"; };
+		036F7ABE1D17DC55005F5BE4 /* ServerResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerResponseMapper.h; sourceTree = "<group>"; };
+		036F7ABF1D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedServerResponseMapper.h; sourceTree = "<group>"; };
+		036F7AC01D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedServerResponseMapper.m; sourceTree = "<group>"; };
+		036F7AC31D17E78E005F5BE4 /* CommonNetworkClientTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonNetworkClientTest.m; sourceTree = "<group>"; };
+		036F7AC51D17E857005F5BE4 /* NetworkConstantsAndURLs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkConstantsAndURLs.h; sourceTree = "<group>"; };
+		036F7AC61D17E857005F5BE4 /* NetworkConstantsAndURLs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NetworkConstantsAndURLs.m; sourceTree = "<group>"; };
 		03B6AEB61D173815001AE9DE /* RSSFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedTableViewCell.h; sourceTree = "<group>"; };
 		03B6AEB71D173815001AE9DE /* RSSFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedTableViewCell.m; sourceTree = "<group>"; };
 		03B6AEB91D173885001AE9DE /* RSSFeedTableViewManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedTableViewManger.h; sourceTree = "<group>"; };
@@ -141,6 +154,7 @@
 			children = (
 				32C46014DA987386EE3A2617 /* UserStories */,
 				03554C521D16CA280031AC39 /* BusinessLogic */,
+				036F7AB91D17DA47005F5BE4 /* CoreLogic */,
 				03554C541D16E33B0031AC39 /* ModelEntities */,
 				03554C281D15E4F00031AC39 /* AppDelegate.h */,
 				03554C291D15E4F00031AC39 /* AppDelegate.m */,
@@ -167,6 +181,7 @@
 				03554C3F1D15E4F00031AC39 /* RssReaderTests.m */,
 				03554C411D15E4F00031AC39 /* Info.plist */,
 				828396EBEE4BE476CE87E519 /* RSSFeedUserStory */,
+				036F7AC21D17E768005F5BE4 /* CoreLogicTests */,
 			);
 			path = RssReaderTests;
 			sourceTree = "<group>";
@@ -188,6 +203,29 @@
 				03554C561D16E49B0031AC39 /* RSSNewsEntity.m */,
 			);
 			path = ModelEntities;
+			sourceTree = "<group>";
+		};
+		036F7AB91D17DA47005F5BE4 /* CoreLogic */ = {
+			isa = PBXGroup;
+			children = (
+				036F7ABA1D17DB09005F5BE4 /* NetworkClient.h */,
+				036F7ABB1D17DB29005F5BE4 /* CommonNetworkClient.h */,
+				036F7ABC1D17DB29005F5BE4 /* CommonNetworkClient.m */,
+				036F7ABE1D17DC55005F5BE4 /* ServerResponseMapper.h */,
+				036F7ABF1D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.h */,
+				036F7AC01D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.m */,
+				036F7AC51D17E857005F5BE4 /* NetworkConstantsAndURLs.h */,
+				036F7AC61D17E857005F5BE4 /* NetworkConstantsAndURLs.m */,
+			);
+			path = CoreLogic;
+			sourceTree = "<group>";
+		};
+		036F7AC21D17E768005F5BE4 /* CoreLogicTests */ = {
+			isa = PBXGroup;
+			children = (
+				036F7AC31D17E78E005F5BE4 /* CommonNetworkClientTest.m */,
+			);
+			path = CoreLogicTests;
 			sourceTree = "<group>";
 		};
 		03D616FC279216B56F5BCBC2 /* Presenter */ = {
@@ -542,10 +580,13 @@
 			files = (
 				03554C2A1D15E4F00031AC39 /* AppDelegate.m in Sources */,
 				036F7AB81D1787A3005F5BE4 /* RSSFeedServiceImpl.m in Sources */,
+				036F7AC11D17DC9E005F5BE4 /* RSSFeedServerResponseMapper.m in Sources */,
+				036F7ABD1D17DB29005F5BE4 /* CommonNetworkClient.m in Sources */,
 				03554C271D15E4F00031AC39 /* main.m in Sources */,
 				03B6AEBB1D173885001AE9DE /* RSSFeedTableViewManger.m in Sources */,
 				30809571E022645A9AF13054 /* RSSFeedUserStoryAssembly.m in Sources */,
 				655D9AD832218FA1FC6FCA8A /* RSSFeedUserStoryViewController.m in Sources */,
+				036F7AC71D17E857005F5BE4 /* NetworkConstantsAndURLs.m in Sources */,
 				03554C571D16E49B0031AC39 /* RSSNewsEntity.m in Sources */,
 				50AFCEFEF4CC7E1386F33A5A /* RSSFeedUserStoryPresenter.m in Sources */,
 				03B6AEB81D173815001AE9DE /* RSSFeedTableViewCell.m in Sources */,
@@ -564,6 +605,7 @@
 				3283B0ECBFA31CC1208A2920 /* RSSFeedUserStoryViewControllerTests.m in Sources */,
 				3A74D3F54F61DD5E497098AE /* RSSFeedUserStoryPresenterTests.m in Sources */,
 				90527A70CE5643A3B21C09DF /* RSSFeedUserStoryInteractorTests.m in Sources */,
+				036F7AC41D17E78E005F5BE4 /* CommonNetworkClientTest.m in Sources */,
 				8457361C17AE952A4E0E1A8F /* RSSFeedUserStoryRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
