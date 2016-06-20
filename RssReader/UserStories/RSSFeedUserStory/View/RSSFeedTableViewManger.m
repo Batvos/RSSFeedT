@@ -50,7 +50,7 @@
     
     UIImage *placeholder;
     
-    if ([news.newsSource containsString:@"lenta"]) {
+    if ([news.newsSource localizedCaseInsensitiveContainsString:@"lenta"]) {
         placeholder = [UIImage imageNamed:@"lenta"];
     } else {
         placeholder = [UIImage imageNamed:@"gazetaru"];

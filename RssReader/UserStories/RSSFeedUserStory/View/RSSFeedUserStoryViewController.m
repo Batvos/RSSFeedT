@@ -28,6 +28,9 @@
     [refreshControl addTarget:self.output action:@selector(didPullRefreshControll) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
     
+    // TODO: вынести в файл локализации.
+    self.navigationItem.title = @"Новости";
+    
 	[self.output didTriggerViewReadyEvent];
 }
 
