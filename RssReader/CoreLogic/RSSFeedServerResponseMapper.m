@@ -80,6 +80,7 @@ static NSString * const PubDateElementName = @"pubDate";
         } else if ([elementName isEqualToString:DescriptionElementName]) {
             self.currentNews.shortDescription = self.currentString;
         } else if ([elementName isEqualToString:PubDateElementName]) {
+            self.currentNews.date = [self formatStringDateFromRSS:self.currentString];
         }
     }
     else if ([self.parentElement isEqualToString:ChannelElementName]) {
@@ -90,6 +91,14 @@ static NSString * const PubDateElementName = @"pubDate";
     }
     
     self.currentString = nil;
+}
+
+- (NSDate *)formatStringDateFromRSS:(NSString *)dateStr {
+    // format - Mon, 20 Jun 2016 21:28:04 +0300
+    NSDateFormatter *formatter = [[NSDateFormatter alloc] init];
+    [formatter setDateFormat:@"EEE, dd MMM YYYY HH:mm:ss Z"];
+    
+    return [formatter dateFromString:dateStr];;
 }
 
 @end

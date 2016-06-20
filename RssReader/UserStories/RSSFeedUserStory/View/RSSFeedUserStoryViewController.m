@@ -24,6 +24,10 @@
     self.tableView.rowHeight = UITableViewAutomaticDimension;
     self.tableView.estimatedRowHeight = 64;
     
+    UIRefreshControl *refreshControl = [UIRefreshControl new];
+    [refreshControl addTarget:self.output action:@selector(didPullRefreshControll) forControlEvents:UIControlEventValueChanged];
+    self.refreshControl = refreshControl;
+    
 	[self.output didTriggerViewReadyEvent];
 }
 
@@ -40,6 +44,10 @@
 
 - (void)updateNewsFeed:(NSArray *)newsList {
     [self.delegateAndSource updateTableViewWithNewsList:newsList];
+    
+    if (self.refreshControl.refreshing) {
+        [self.refreshControl endRefreshing];
+    }
 }
 
 #pragma mark - RSSFeedTableViewMangerOutput methods

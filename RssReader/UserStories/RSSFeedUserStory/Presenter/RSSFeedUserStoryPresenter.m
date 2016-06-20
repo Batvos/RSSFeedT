@@ -28,14 +28,20 @@
     [self.view setupInitialState:rssNewsList];
 }
 
+
+- (void)didPullRefreshControll {
+    [self.interactor updateRSSFeed];
+}
+
+
+- (void)didTriggerTapCellWithNews:(RSSNewsEntity *)news {
+    
+}
+
 #pragma mark - Методы RSSFeedUserStoryInteractorOutput
 
 - (void)didUpdateRSSFeed:(NSArray *)newsList {
     [self.view updateNewsFeed:newsList];
-}
-
-- (void)didTriggerTapCellWithNews:(RSSNewsEntity *)news {
-    
 }
 
 @end

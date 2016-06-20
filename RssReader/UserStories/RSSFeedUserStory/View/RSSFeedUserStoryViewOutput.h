@@ -26,4 +26,9 @@
  */
 - (void)didTriggerTapCellWithNews:(RSSNewsEntity *)news;
 
+/**
+ * Method inform presenter that refresh controll was pulled.
+ */
+- (void)didPullRefreshControll;
+
 @end

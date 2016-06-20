@@ -69,6 +69,24 @@
     OCMVerify([self.mockInteractor updateRSSFeed]);
 }
 
+- (void)testDidPullRefreshControll {
+    // given
+    
+    // when
+    [self.presenter didPullRefreshControll];
+    
+    // then
+    OCMVerify([self.mockInteractor updateRSSFeed]);
+}
+
+- (void)testDidTriggerTapCellWithNews {
+    // given
+    
+    // when
+    
+    // then
+}
+
 #pragma mark - Тестирование методов RSSFeedUserStoryInteractorOutput
 
 - (void)testSuccessDidUpdateRSSFeed {

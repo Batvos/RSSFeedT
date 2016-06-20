@@ -33,6 +33,9 @@
 #pragma mark -  Private methods
 
 - (NSArray *)sortRSSFeedByDate:(NSMutableArray *)rssNewsList {
+    NSSortDescriptor *sortDescriptor = [NSSortDescriptor sortDescriptorWithKey:NSStringFromSelector(@selector(date)) ascending:NO];
+    rssNewsList = [[rssNewsList sortedArrayUsingDescriptors:@[sortDescriptor]] mutableCopy];
+    
     return rssNewsList;
 }
 
