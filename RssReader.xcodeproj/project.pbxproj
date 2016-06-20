@@ -15,6 +15,8 @@
 		03554C4B1D16199F0031AC39 /* RSSFeed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03554C4A1D16199F0031AC39 /* RSSFeed.storyboard */; };
 		03554C4D1D161B7E0031AC39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03554C4C1D161B7E0031AC39 /* Main.storyboard */; };
 		03554C571D16E49B0031AC39 /* RSSNewsEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 03554C561D16E49B0031AC39 /* RSSNewsEntity.m */; };
+		0355A0901D1873B600234E57 /* RSSFeedServerResponseMapperTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0355A08F1D1873B600234E57 /* RSSFeedServerResponseMapperTest.m */; };
+		0355A0921D1874BB00234E57 /* testMapping.xml in Resources */ = {isa = PBXBuildFile; fileRef = 0355A0911D1874BB00234E57 /* testMapping.xml */; };
 		036F7AB51D17594B005F5BE4 /* RSSFeedTableViewMangerTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AB41D17594B005F5BE4 /* RSSFeedTableViewMangerTest.m */; };
 		036F7AB81D1787A3005F5BE4 /* RSSFeedServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7AB71D1787A3005F5BE4 /* RSSFeedServiceImpl.m */; };
 		036F7ABD1D17DB29005F5BE4 /* CommonNetworkClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 036F7ABC1D17DB29005F5BE4 /* CommonNetworkClient.m */; };
@@ -63,6 +65,8 @@
 		03554C531D16DD010031AC39 /* RSSFeedService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedService.h; sourceTree = "<group>"; };
 		03554C551D16E49B0031AC39 /* RSSNewsEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSNewsEntity.h; sourceTree = "<group>"; };
 		03554C561D16E49B0031AC39 /* RSSNewsEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSNewsEntity.m; sourceTree = "<group>"; };
+		0355A08F1D1873B600234E57 /* RSSFeedServerResponseMapperTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedServerResponseMapperTest.m; sourceTree = "<group>"; };
+		0355A0911D1874BB00234E57 /* testMapping.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = testMapping.xml; sourceTree = "<group>"; };
 		036F7AB41D17594B005F5BE4 /* RSSFeedTableViewMangerTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedTableViewMangerTest.m; sourceTree = "<group>"; };
 		036F7AB61D1787A3005F5BE4 /* RSSFeedServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSSFeedServiceImpl.h; sourceTree = "<group>"; };
 		036F7AB71D1787A3005F5BE4 /* RSSFeedServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSSFeedServiceImpl.m; sourceTree = "<group>"; };
@@ -224,6 +228,8 @@
 			isa = PBXGroup;
 			children = (
 				036F7AC31D17E78E005F5BE4 /* CommonNetworkClientTest.m */,
+				0355A08F1D1873B600234E57 /* RSSFeedServerResponseMapperTest.m */,
+				0355A0911D1874BB00234E57 /* testMapping.xml */,
 			);
 			path = CoreLogicTests;
 			sourceTree = "<group>";
@@ -475,6 +481,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0355A0921D1874BB00234E57 /* testMapping.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -606,6 +613,7 @@
 				3A74D3F54F61DD5E497098AE /* RSSFeedUserStoryPresenterTests.m in Sources */,
 				90527A70CE5643A3B21C09DF /* RSSFeedUserStoryInteractorTests.m in Sources */,
 				036F7AC41D17E78E005F5BE4 /* CommonNetworkClientTest.m in Sources */,
+				0355A0901D1873B600234E57 /* RSSFeedServerResponseMapperTest.m in Sources */,
 				8457361C17AE952A4E0E1A8F /* RSSFeedUserStoryRouterTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -1,0 +1,27 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <language>ru</language>
+        <title>Lenta.ru : Новости</title>
+        <description>Новости, статьи, фотографии, видео. Семь дней в неделю, 24 часа в сутки</description>
+        <link>http://lenta.ru</link>
+        <image>
+            <url>http://assets.lenta.ru/small_logo.png</url>
+            <title>Lenta.ru</title>
+            <link>http://lenta.ru</link>
+            <width>134</width>
+            <height>22</height>
+        </image>
+        <atom:link rel="self" type="application/rss+xml" href="http://lenta.ru/rss" />
+        <item>
+            <guid>https://lenta.ru/news/2016/06/20/sanctionseu/</guid>
+            <title>СМИ сообщили о расколе в ЕС по вопросу антироссийских санкций</title>
+            <link>https://lenta.ru/news/2016/06/20/sanctionseu/</link>
+            <description>
+                <![CDATA[ Между странами Евросоюза возник раскол по вопросу продления санкций против России. Великобритания настаивает на продолжении жесткого курса в отношении Москвы, в то время как Словакия, которая начнет председательствовать в ЕС с 1 июля, заявила о несостоятельности подобной политики, сообщает Reuters.]]>
+            </description>
+            <pubDate>Mon, 20 Jun 2016 21:56:00 +0300</pubDate>
+            <enclosure url="https://icdn.lenta.ru/images/2016/06/20/21/20160620215535878/pic_a99fc7116abc0b004cb7c96db6dabec7.jpg" length="33083" type="image/jpeg" />
+            <category>Мир</category>
+        </item> 
+    </channel> 
+</rss>
